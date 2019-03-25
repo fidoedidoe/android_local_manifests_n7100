@@ -15,6 +15,16 @@
            fetch="https://github.com/ChronoMonochrome"
            revision="refs/heads/master" />
 
+  <remove-project name="LineageOS/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="lineage-16.0-caf-8084" />
+  <remove-project name="LineageOS/android_hardware_qcom_bt" groups="qcom,pdk-qcom" revision="lineage-16.0-caf" />
+  <remove-project name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-8084" />
+  <remove-project name="LineageOS/android_hardware_qcom_fm" groups="qcom,qcom_fm" />
+  <remove-project name="LineageOS/android_hardware_qcom_media" groups="qcom,pdk-qcom" revision="lineage-16.0-caf-8084" />
+  <remove-project name="LineageOS/android_hardware_qcom_power" groups="qcom,pdk-qcom" />
+  <remove-project name="LineageOS/android_hardware_qcom_thermal" groups="qcom,pdk-qcom" />
+  <remove-project name="LineageOS/android_hardware_qcom_vr" groups="qcom,pdk-qcom" />
+  <remove-project name="LineageOS/android_hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" revision="lineage-16.0-caf" />
+
   <!-- Infrastructure -->
   <remove-project path="lineage/ansible" name="LineageOS/ansible" groups="infra" revision="master" />
   <remove-project path="lineage/crowdin" name="LineageOS/cm_crowdin" groups="infra" revision="master" />
@@ -29,9 +39,10 @@
   <remove-project path="lineage/contributors-cloud-generator" name="LineageOS/contributors-cloud-generator" groups="tools" revision="master" />
   <remove-project path="lineage/scripts" name="LineageOS/scripts" groups="tools" revision="master" />
 
-  <project path="hardware/samsung" name="CustomROMs/android_hardware_samsung" revision="lineage-15.1" />
-  <project path="kernel/samsung/smdk4412" name="ChronoMonochrome/android_kernel_samsung_smdk4412" revision="master" clone-depth="1" />
-  <project path="device/samsung/smdk4412-common" name="CustomROMs/android_device_samsung_smdk4412-common" revision="lineage-15.1" />
-  <project path="device/samsung/n7100" name="ComicoTeam/android_device_samsung_n7100" revision="lineage-15.1" />
+
+  <project path="hardware/samsung" name="CustomROMs/android_hardware_samsung" revision="lineage-16.0" />
+  <project path="kernel/samsung/smdk4412" name="ChronoMonochrome/android_kernel_samsung_smdk4412" revision="lineage-16.0" clone-depth="1" />
+  <project path="device/samsung/smdk4412-common" name="CustomROMs/android_device_samsung_smdk4412-common" revision="lineage-16.0" />
+  <project path="device/samsung/n7100" name="ComicoTeam/android_device_samsung_n7100" revision="lineage-16.0" />
   <project path="vendor/samsung" name="ComicoTeam/proprietary_vendor_samsung_n7100" revision="pie" />
 </manifest>
