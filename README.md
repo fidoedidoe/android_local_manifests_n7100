@@ -5,13 +5,13 @@ Getting started
 ---------------
 
 ```
-1. mkdir -p LOS16 && cd LOS16
+1. mkdir -p Havoc-OS && cd Havoc-OS
 
 2. Initialize your local repository using the LineageOS trees with a command
-  repo init -u git://github.com/LineageOS/android.git -b lineage-16.0
+  repo init -u https://github.com/Havoc-OS/android_manifest.git -b pie && repo sync -j16
   
 3. Clone this repo:
-  git clone https://github.com/CustomROMs/android_local_manifests_n7100 .repo/local_manifests -b lineage-16.0
+  git clone https://github.com/ComicoTeam/android_local_manifests_n7100 .repo/local_manifests -b Havoc-Pie
 
 4. Sync LineageOS trees:
   repo sync --no-tags --no-clone-bundle --force-sync -c -j8
